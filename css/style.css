@@ -53,7 +53,7 @@ html {
 #main {
     /* border: 2px solid blue; */
     /* background-color: rgb(8, 194, 194); */
-    width: 50%;
+    width: 60%;
     height:auto;
     /* position:relative; */
     margin: auto;
@@ -67,6 +67,7 @@ html {
 }
 .para {
     /* border: 2px solid yellow; */
+    min-height: 250px;
     height: auto;
     margin: 10px 5px 10px;
 }
@@ -75,11 +76,12 @@ html {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     font-family: 'Baloo Bhaina 2', cursive;
+    color: #56acf7;
 }
 
 /* IMAGE STYLING */
 .image {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 200px;
     width: 300px;
     margin-bottom: 5px;
@@ -91,12 +93,12 @@ html {
 }
 .odd .image {
     float: right;
-    margin-left: 5px;
+    margin-left: 6px;
     /* width:auto; */
 }
 .even .image {
     float: left;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 /* CONTENT STYLING */
@@ -112,20 +114,21 @@ html {
     border: 2px solid green;
     background-color: rgb(3, 78, 78);
     height: 50px;
+    text-align: center;
 }
 
-#footer h5 {
+#footer h7 {
     font-size: 1.3em;
     color: #a2da1e;
 }
-#copyright {
+/* #copyright {
     float: left;
     margin-left: 10px;
 }
 #contact {
     float:right;
     margin-right: 10px;
-}
+} */
 
 /* MEDIA QUERY --> 1 */
 @media only screen and (max-width: 850px) {
@@ -139,13 +142,13 @@ html {
     .odd .image {
         float: none;
         display: block;
-        width: 50%;
+        width: 300px;
         margin: auto;
     }
     .even .image {
         float: none;
         display: block;
-        width: 50%;
+        width: 300px;
         margin: auto;
     }
     #navbar {
@@ -166,7 +169,7 @@ html {
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 330px) {
     .even .image {
         width : 96%;
     }
@@ -174,7 +177,7 @@ html {
         width : 96%;
     }
 
-    #copyright {
+    /* #copyright {
         float: none;
     }
     #contact {
@@ -182,5 +185,5 @@ html {
     }
     #footer {
         text-align: center;
-    }
+    } */
 }
