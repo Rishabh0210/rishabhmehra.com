@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Open+Sans:ital,wght@0,700;1,400&family=Ubuntu+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap");
+
+
+/* ROOT STYLING */
+html {
+    font-size:16px;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+/* BODY CONTAINER */
+.container {
+    /* border: 2px solid red; */
+    height: 100%;
+    /* display: grid;
+    display:
+    grid-gap: 0.2rem;
+    /* grid-row-gap: 0.2rem; */
+    /* grid-template-rows: 0.3fr 4fr 0.2fr;  */
+}
+
+/* NAVBAR STYLING */
+#navbar {
+    overflow: hidden;
+    /* border: 2px solid red; */
+    background-color: black; 
+    opacity: 5;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 1;
+}
+#navbar li {
+    display: inline-block;
+    font-size : 1em;
+    margin: 1.5em;
+}
+#navbar li a {
+    text-decoration: none;
+    color: burlywood;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+
+/* MAIN CONTENT AREA STYLING */
+#main {
+    /* border: 2px solid blue; */
+    /* background-color: rgb(8, 194, 194); */
+    width: 50%;
+    height:auto;
+    /* position:relative; */
+    margin: auto;
+    /* text-align:center; */
+    justify-content: center;
+    margin-top: 4.4em;
+    /* top:3em; */
+}
+#main h3 {
+    font-family: 'Arvo', serif;
+}
+.para {
+    /* border: 2px solid yellow; */
+    height: auto;
+    margin: 10px 5px 10px;
+}
+.para h5 {
+    font-size: 1rem;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+/* IMAGE STYLING */
+.image {
+    border: 2px solid black;
+    height: 200px;
+    width: 300px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.image img {
+    height: inherit;
+    width: inherit;
+}
+.odd .image {
+    float: right;
+    margin-left: 5px;
+    /* width:auto; */
+}
+.even .image {
+    float: left;
+    margin-right: 5px;
+}
+
+/* CONTENT STYLING */
+.content {
+    /* border: 2px solid blue; */
+    font-family: 'Baloo Chettan 2', cursive;
+    width: 100%;
+}
+
+
+/* FOOTER STYLING */
+#footer {
+    border: 2px solid green;
+    background-color: rgb(3, 78, 78);
+    height: 50px;
+}
+
+#footer h5 {
+    font-size: 1.3em;
+    color: #a2da1e;
+}
+#copyright {
+    float: left;
+    margin-left: 10px;
+}
+#contact {
+    float:right;
+    margin-right: 10px;
+}
+
+/* MEDIA QUERY --> 1 */
+@media only screen and (max-width: 850px) {
+    #main {
+        align-content: center;
+        width: 95%;
+    }
+    .image {
+        /* background-color: red; */
+    }
+    .odd .image {
+        float: none;
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+    .even .image {
+        float: none;
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+    #navbar {
+        width: 95%;
+        margin: auto;
+        left: 2.5%
+    }
+    #footer {
+        width : 95%;
+        margin: auto;
+    }
+    .para {
+        text-align: center;
+    }
+    .content {
+        text-align: left;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .even .image {
+        width : 96%;
+    }
+    .odd .image {
+        width : 96%;
+    }
+
+    #copyright {
+        float: none;
+    }
+    #contact {
+        float:none;
+    }
+    #footer {
+        text-align: center;
+    }
+}
