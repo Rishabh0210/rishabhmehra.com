@@ -136,9 +136,6 @@ html {
         align-content: center;
         width: 95%;
     }
-    .image {
-        /* background-color: red; */
-    }
     .odd .image {
         float: none;
         display: block;
@@ -151,6 +148,9 @@ html {
         width: 300px;
         margin: auto;
     }
+    .image {
+        /* margin-bottom: 5px; */
+    }
     #navbar {
         width: 95%;
         margin: auto;
@@ -159,6 +159,7 @@ html {
     #footer {
         width : 95%;
         margin: auto;
+        height: 60px;
     }
     .para {
         text-align: center;
