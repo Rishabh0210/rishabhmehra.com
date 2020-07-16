@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap');
 
 /* ROOT STYLING */
 html {
@@ -63,7 +63,8 @@ html {
     /* top:3em; */
 }
 #main h3 {
-    font-family: 'Arvo', serif;
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 2rem;
 }
 .para {
     /* border: 2px solid yellow; */
@@ -141,12 +142,14 @@ html {
         display: block;
         width: 300px;
         margin: auto;
+        margin-bottom: 10px;
     }
     .even .image {
         float: none;
         display: block;
         width: 300px;
         margin: auto;
+        margin-bottom: 10px;
     }
     .image {
         /* margin-bottom: 5px; */
